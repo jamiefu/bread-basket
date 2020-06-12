@@ -9,7 +9,10 @@ def load_models():
     """
     Load all database models and create tables
     """
-    
+    from server.models.user import User
+    from server.models.event import Event
+    from server.models.registration import Registration
+
     db.create_all()
 
 def load_blueprints():
